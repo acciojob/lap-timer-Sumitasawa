@@ -48,7 +48,7 @@ function App() {
     const minutes = Math.floor(centiseconds / 6000);
     const seconds = Math.floor((centiseconds % 6000) / 100);
     const cs = centiseconds % 100;
-    return `${pad(minutes)}:${pad(seconds)}.${pad(cs)}`;
+     return `${pad(minutes)}:${pad(seconds)}:${pad(cs)}`;
   };
   const pad = (num) => (num < 10 ? "0" + num : num);
 
